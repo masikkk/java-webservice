@@ -1,13 +1,15 @@
 package com.masikkk.jws.server.bean;
 
 public class StudentResponse {
-	private int id; //学号
-	private int age; //年龄
-	private String name; //姓名
-	private String school; //学校
-	private String city; //城市
-	private String info; //个人介绍
+	private int id = 0; //学号
+	private int age = 0; //年龄
+	private String name = "default"; //姓名
+	private String school = "default"; //学校
+	private String city = "default"; //城市
+	private String info = "default"; //个人介绍
 
+	public StudentResponse() {
+	}
 	
 	public StudentResponse(int id, int age, String name, String school, String city, String info) {
 		this.id = id;
