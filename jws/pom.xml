@@ -5,4 +5,7 @@
   <artifactId>jws</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <modules>
+    <module>jws-server</module>
+  </modules>
 </project>
