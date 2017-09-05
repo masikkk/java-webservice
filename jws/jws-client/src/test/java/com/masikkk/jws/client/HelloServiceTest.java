@@ -24,7 +24,7 @@ public class HelloServiceTest {
 	@Test
 	public void testHelloServiceURL() throws MalformedURLException{
 		System.out.println("指定URL测试：");
-		URL url = new URL("http://localhost:8899/HelloService?wsdl");
+		URL url = new URL("http://localhost:8899/HelloService?wsdl");//加不加后面的?wsdl都行
 		HelloServiceImplService helloServiceImplService = new HelloServiceImplService(url);//指定URL
 		HelloServiceImpl helloServiceImpl = helloServiceImplService.getHelloServiceImplPort();
 		List<String> arrayList = helloServiceImpl.sayHelloList("masikkk", 5);		
