@@ -7,5 +7,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>jws-server</module>
+    <module>jws-client</module>
   </modules>
 </project>
