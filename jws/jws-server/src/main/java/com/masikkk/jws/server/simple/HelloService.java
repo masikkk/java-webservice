@@ -1,4 +1,4 @@
-package com.masikkk.jws.server;
+package com.masikkk.jws.server.simple;
 
 public interface HelloService {
 	//返回你好

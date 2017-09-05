@@ -1,4 +1,4 @@
-package com.masikkk.jws.server;
+package com.masikkk.jws.server.simple;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
