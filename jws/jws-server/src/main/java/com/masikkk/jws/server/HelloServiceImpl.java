@@ -12,4 +12,9 @@ public class HelloServiceImpl implements HelloService {
 	public String sayHelloName(String name) {
 		return "你好，"+name;
 	}
+
+	@WebMethod(exclude=true)
+	public String hideMethod() {
+		return "此方法被exclude隐藏";
+	}
 }
