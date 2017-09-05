@@ -2,11 +2,12 @@ package com.masikkk.jws.client;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
 import org.junit.Test;
 
-import com.masikkk.jws.client.wsimport.HelloServiceImpl;
-import com.masikkk.jws.client.wsimport.HelloServiceImplService;
+import com.masikkk.jws.client.simple.HelloServiceImpl;
+import com.masikkk.jws.client.simple.HelloServiceImplService;
 
 public class HelloServiceTest {
 	@Test
@@ -14,8 +15,10 @@ public class HelloServiceTest {
 		System.out.println("默认URL测试：");
 		HelloServiceImplService helloServiceImplService = new HelloServiceImplService();//默认URL
 		HelloServiceImpl helloServiceImpl = helloServiceImplService.getHelloServiceImplPort();
+		List<String> arrayList = helloServiceImpl.sayHelloList("masikkk", 5);
 		System.out.println(helloServiceImpl.sayHello());
 		System.out.println(helloServiceImpl.sayHelloName("masikkk"));
+		System.out.println(arrayList);
 	}
 	
 	@Test
@@ -24,7 +27,9 @@ public class HelloServiceTest {
 		URL url = new URL("http://localhost:8899/HelloService?wsdl");
 		HelloServiceImplService helloServiceImplService = new HelloServiceImplService(url);//指定URL
 		HelloServiceImpl helloServiceImpl = helloServiceImplService.getHelloServiceImplPort();
+		List<String> arrayList = helloServiceImpl.sayHelloList("masikkk", 5);		
 		System.out.println(helloServiceImpl.sayHello());
-		System.out.println(helloServiceImpl.sayHelloName("masikkk"));		
+		System.out.println(helloServiceImpl.sayHelloName("masikkk"));	
+		System.out.println(arrayList);
 	}
 }
