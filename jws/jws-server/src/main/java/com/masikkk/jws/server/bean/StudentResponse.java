@@ -1,14 +1,21 @@
 package com.masikkk.jws.server.bean;
 
+//查询结果实体
 public class StudentResponse {
-	private int id = 0; //学号
-	private int age = 0; //年龄
-	private String name = "default"; //姓名
-	private String school = "default"; //学校
-	private String city = "default"; //城市
-	private String info = "default"; //个人介绍
+	private int id; //学号
+	private int age; //年龄
+	private String name; //姓名
+	private String school; //学校
+	private String city; //城市
+	private String info; //个人介绍
 
 	public StudentResponse() {
+		this.id = 0;
+		this.age = 0;
+		this.name = "default";
+		this.school = "default";
+		this.city = "default";
+		this.info = "default";
 	}
 	
 	public StudentResponse(int id, int age, String name, String school, String city, String info) {
@@ -19,6 +26,7 @@ public class StudentResponse {
 		this.city = city;
 		this.info = info;
 	}
+	
 	public int getId() {
 		return id;
 	}
