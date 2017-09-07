@@ -16,7 +16,7 @@ public class StudentServiceTest {
 		System.out.println("测试queryStudentResponse：");
 		StudentServiceImplService studentServiceImplService = new StudentServiceImplService();
 		StudentServiceImpl studentServiceImpl = studentServiceImplService.getStudentServiceImplPort();
-		StudentResponse studentResponse = studentServiceImpl.queryStudentResponse(new StudentRequest(),"Java称程序员");
+		StudentResponse studentResponse = studentServiceImpl.queryStudentResponse(new StudentRequest(),"Java程序员");
 		printStudentResponse(studentResponse);
 	}
 
@@ -25,7 +25,7 @@ public class StudentServiceTest {
 		System.out.println("测试queryStudentResponsesList：");
 		StudentServiceImplService studentServiceImplService = new StudentServiceImplService();
 		StudentServiceImpl studentServiceImpl = studentServiceImplService.getStudentServiceImplPort();
-		List<StudentResponse> studentResponseList = studentServiceImpl.queryStudentResponseList(new StudentRequest(),"Java称程序员",4);
+		List<StudentResponse> studentResponseList = studentServiceImpl.queryStudentResponseList(new StudentRequest(),"Java程序员",4);
 		printStudentResponse(studentResponseList);		
 	}
 	
