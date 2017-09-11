@@ -16,3 +16,7 @@ Java发布和调用webservice实例，包括原生JAX-WS发布和调用webservic
 
 ## 运行方法
 以HelloService为例，首先在jws-server项目中HelloServiceMain服务发布类上Run As->Java Application启动服务端确保webservice是可访问的，然后在jws-client项目中HelloServiceTest测试类上Run As->JUnit Test执行测试类，查看控制台输出结果。
+
+## 参考博文
+- Java-JWS http://masikkk.com/article/Java-JWS/
+- Apache-CXF http://masikkk.com/article/Apache-CXF/
