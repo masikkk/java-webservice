@@ -6,8 +6,26 @@ import java.util.List;
 public class Group {
     private Long id;
     private String name;
-    private List<User> users = new ArrayList<User>();
+    private List<User> users;
 
+    public Group() {
+    	this.id = 0L;
+    	this.name = "default";
+    	this.users = new ArrayList<User>();
+    }
+    
+    public Group(Long id, String name) {
+    	this.id = id;
+    	this.name = name;
+    	this.users = new ArrayList<User>();
+    }    
+    
+    public Group(Long id, String name, List<User> users) {
+    	this.id = id;
+    	this.name = name;
+    	this.users = users;
+    }
+    
     public Long getId() {
         return id;
     }

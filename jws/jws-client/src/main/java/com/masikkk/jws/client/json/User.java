@@ -4,6 +4,16 @@ public class User {
     private Long id;
     private String name;
 
+    public User() {
+    	this.id = 0L;
+    	this.name = "default";
+    }
+    
+    public User(Long id, String name) {
+    	this.id = id;
+    	this.name = name;
+    }
+    
     public Long getId() {
         return id;
     }

@@ -13,18 +13,9 @@ public class JsonServiceImpl implements JsonService {
 		System.out.println("请求参数解析为对象： ");
 		System.out.println(groupRequest.toString());
 		
-		Group groupResponse = new Group();
-		groupResponse.setId(222L);
-		groupResponse.setName("com.masikkk");
-
-		User guestUser = new User();
-		guestUser.setId(333L);
-		guestUser.setName("masikkk_guest");
-
-		User rootUser = new User();
-		rootUser.setId(444L);
-		rootUser.setName("masikkk_admin");
-
+		Group groupResponse = new Group(222L,"com.masikkk");
+		User guestUser = new User(333L,"masikkk_guest");
+		User rootUser = new User(444L,"masikkk_admin");
 		groupResponse.addUser(guestUser);
 		groupResponse.addUser(rootUser);
 		
