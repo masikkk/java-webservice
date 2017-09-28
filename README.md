@@ -1,7 +1,7 @@
 # java-webservice 
 Java发布和调用webservice实例，包括原生JAX-WS发布和调用webservice，以及第三方cxf发布和调用webservice
 
-## 项目简介
+## 项目介绍
 本项目是一个maven多模块项目：
 - **jws项目**：多模块maven项目的父项目，不含任何代码，只在pom中规定各子模块依赖项的版本号
 - **jws-server项目**：webservice服务发布端，包含3个包：
